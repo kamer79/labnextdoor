@@ -1,47 +1,25 @@
-# Lab Next Door Website
+# Lab Next Door
 
-**Current version: v0.1.0**
+**Current version: v0.2.0**
 
 > Still Figuring It Out
 
-Static GitHub Pages website for Lab Next Door.
+Lab Next Door is a simple, static GitHub Pages site for Smart Home, IoT, Homelab and 3D Printing experiments.
+
+## Project structure
+
+- `index.html` is the GitHub Pages entry point and stays in the repository root.
+- `assets/` contains brand artwork, images and icons.
+- `css/` and `js/` contain the browser-only presentation and interaction code.
+- `data/` contains small JSON content catalogs for future integrations.
+- `projects/` contains self-contained project pages.
+- `downloads/` is organized by file type.
+- `docs/` contains brand and version documentation.
+
+All links are relative so the site works when published at `/labnextdoor/`. No build step is required: publish the `main` branch from the repository root in **Settings → Pages → Build and deployment**.
 
 ## Brand
-- Midnight `#0D1B2A`
-- Deep Blue `#1C3F6E`
-- Electric Blue `#378ADD`
-- Signal Orange `#F5800A`
-- Slate Grey `#6B7280`
-- Off White `#F2F4F7`
-- Green is excluded from the identity.
 
-## Interactive background
-The circuit network is intentionally dim. Clicking/tapping near a trace activates that connected path, shows a travelling Signal Orange pulse, then fades it back down.
+Midnight `#0D1B2A` · Deep Blue `#1C3F6E` · Electric Blue `#378ADD` · Signal Orange `#F5800A` · Slate Grey `#6B7280` · Off White `#F2F4F7`.
 
-## GitHub Pages
-Publish the `main` branch from `/ (root)` in **Settings → Pages → Build and deployment**.
-
-## Future versions
-Update `VERSION` and `CHANGELOG.md` with every website release. Keep the version visible in the footer so future updates can be tracked.
-
-## GitHub Pages upload
-
-**Important:** This ZIP is packaged with the website files at the ZIP root. After extracting it, upload the **contents of this folder** to the root of the `labnextdoor` repository. Do not upload the ZIP itself and do not flatten the `css/`, `js/`, or `assets/` folders.
-
-The repository root should contain:
-
-```text
-index.html
-css/style.css
-js/site.js
-js/circuit-background.js
-assets/favicon.jpg
-assets/logo/lnd-circle-3d.jpg
-assets/logo/lnd-primary-3d.jpg
-assets/icons/lnd-puzzle-3d.jpg
-README.md
-CHANGELOG.md
-VERSION
-sitemap.xml
-robots.txt
-```
+Green is excluded from the identity.

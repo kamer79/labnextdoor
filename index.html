@@ -6,25 +6,27 @@
   <title>Lab Next Door — Still Figuring It Out</title>
   <meta name="description" content="Lab Next Door — Smart Home, IoT, Homelab and 3D Printing. Build it. Break it. Fix it. Share it.">
   <meta name="theme-color" content="#0D1B2A">
-  <link rel="icon" href="assets/favicon.jpg">
+  <link rel="icon" href="assets/brand/favicon.png">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
   <canvas id="circuitField" aria-hidden="true"></canvas>
   <div class="noise" aria-hidden="true"></div>
   <header class="site-header">
     <a class="brand" href="#top" aria-label="Lab Next Door home">
-      <img src="assets/logo/lnd-circle-3d.jpg" alt="Lab Next Door puzzle logo">
+      <img src="assets/lnd-circle-3d.jpg" alt="Lab Next Door puzzle logo">
       <span><strong>LAB NEXT DOOR</strong><small>Still Figuring It Out</small></span>
     </a>
-    <button class="menu" aria-label="Toggle navigation">☰</button>
-    <nav id="nav">
+    <button class="menu" type="button" aria-label="Toggle navigation" aria-controls="nav" aria-expanded="false">☰</button>
+    <nav id="nav" aria-label="Main navigation">
       <a href="#projects">Projects</a><a href="#notes">Lab Notes</a><a href="#youtube">YouTube</a><a href="#downloads">Downloads</a><a href="#about">About</a>
     </nav>
   </header>
 
   <main id="top">
-    <section class="hero">
+    <section class="hero section-wrap">
       <div class="hero-copy">
         <p class="eyebrow">HOME LAB • BUILD LOG • LEARNING IN PUBLIC</p>
         <h1>Build it.<br><span>Break it.</span><br>Fix it. Share it.</h1>
@@ -32,27 +34,29 @@
         <div class="actions"><a class="btn primary" href="#projects">Explore the lab</a><a class="btn ghost" href="#about">Why “Still Figuring It Out”?</a></div>
         <p class="hint">Click a circuit path in the background.</p>
       </div>
-      <div class="hero-mark"><img src="assets/logo/lnd-primary-3d.jpg" alt="Lab Next Door 3D logo"></div>
+      <div class="hero-mark"><img src="assets/lnd-primary-3d.jpg" alt="Lab Next Door 3D logo"></div>
     </section>
 
-    <section class="section" id="projects"><div class="section-head"><span>01</span><div><p class="eyebrow">THE LAB</p><h2>Projects in progress</h2></div></div>
+    <section class="section section-wrap" id="projects"><div class="section-head"><span>01</span><div><p class="eyebrow">THE LAB</p><h2>Projects in progress</h2></div></div>
       <div class="cards">
-        <article class="card"><span class="tag">IoT</span><h3>ESP32 Sensor Nodes</h3><p>Presence, light and environmental sensing — documented from wiring to firmware.</p><a href="#notes">Open build log →</a></article>
-        <article class="card"><span class="tag">Homelab</span><h3>Local AI & Infrastructure</h3><p>Exploring practical local AI, virtualization, networking and multi-agent systems.</p><a href="#notes">Follow the experiments →</a></article>
-        <article class="card"><span class="tag">Smart Home</span><h3>Home Automation</h3><p>Connected devices, automations and the lessons learned when the house disagrees.</p><a href="#notes">See what's cooking →</a></article>
-        <article class="card"><span class="tag">3D Printing</span><h3>Make, Test, Iterate</h3><p>Useful parts, enclosures and prototypes — including the failures worth remembering.</p><a href="#notes">Explore the builds →</a></article>
+        <article class="card"><span class="tag">IoT</span><h3>ESP32 Sensor Nodes</h3><p>Presence, light and environmental sensing — documented from wiring to firmware.</p><a href="projects/esp32-sensor-node/">Open project <span>↗</span></a></article>
+        <article class="card"><span class="tag">Homelab</span><h3>Local AI &amp; Infrastructure</h3><p>Exploring practical local AI, virtualization, networking and multi-agent systems.</p><a href="projects/local-ai-infrastructure/">Open project <span>↗</span></a></article>
+        <article class="card"><span class="tag">Smart Home</span><h3>Home Automation</h3><p>Connected devices, automations and the lessons learned when the house disagrees.</p><a href="#notes">See lab notes <span>↗</span></a></article>
+        <article class="card"><span class="tag">3D Printing</span><h3>Make, Test, Iterate</h3><p>Useful parts, enclosures and prototypes — including the failures worth remembering.</p><a href="#downloads">Browse files <span>↗</span></a></article>
       </div>
     </section>
 
-    <section class="section split" id="notes"><div class="section-head"><span>02</span><div><p class="eyebrow">LAB NOTES</p><h2>The useful failures</h2></div></div><div class="feature"><div><span class="tag orange">BUILD LOG</span><h3>What I tried → What broke → What I learned → What worked</h3><p>Lab Next Door is about documenting the path, not pretending every project worked on the first attempt.</p></div><div class="quote">“Still Figuring It Out”<small>That is the feature, not the disclaimer.</small></div></div></section>
+    <section class="section section-wrap split" id="notes"><div class="section-head"><span>02</span><div><p class="eyebrow">LAB NOTES</p><h2>The useful failures</h2></div></div><div class="feature"><div><span class="tag">LATEST NOTE</span><h3>Start with a small, observable experiment.</h3><p>Every project gets a short record of what changed, what broke and what comes next. The goal is not a perfect lab — it is a lab you can learn from.</p></div><div class="feature-stat"><strong>∞</strong><span>iterations<br>and counting</span></div></div></section>
 
-    <section class="section" id="youtube"><div class="section-head"><span>03</span><div><p class="eyebrow">WATCH</p><h2>From the bench to YouTube</h2></div></div><div class="video-placeholder"><div class="play">▶</div><div><h3>Latest videos will live here</h3><p>Connect the channel when the first site content is ready.</p></div></div></section>
+    <section class="section section-wrap" id="youtube"><div class="section-head"><span>03</span><div><p class="eyebrow">WATCH</p><h2>From the bench to YouTube</h2></div></div><div class="video-placeholder"><div><span class="play">▶</span><h3>Build logs, tests and experiments</h3><p>Video links will land here as the lab evolves.</p></div></div></section>
 
-    <section class="section" id="downloads"><div class="section-head"><span>04</span><div><p class="eyebrow">OPEN LAB</p><h2>Downloads & project files</h2></div></div><div class="download-grid"><div>STL / 3D prints</div><div>Wiring diagrams</div><div>BOMs & documentation</div><div>Firmware / configs</div></div></section>
+    <section class="section section-wrap" id="downloads"><div class="section-head"><span>04</span><div><p class="eyebrow">OPEN LAB</p><h2>Downloads &amp; project files</h2></div></div><div class="download-grid"><a href="downloads/documentation/" class="download"><span>DOCS</span><strong>Documentation</strong><small>Build notes and guides ↗</small></a><a href="downloads/wiring/" class="download"><span>WIRING</span><strong>Wiring diagrams</strong><small>Connect the next thing ↗</small></a><a href="downloads/firmware/" class="download"><span>CODE</span><strong>Firmware</strong><small>Bits for the devices ↗</small></a></div></section>
 
-    <section class="section about" id="about"><div class="section-head"><span>05</span><div><p class="eyebrow">ABOUT LND</p><h2>A lab next door to ordinary life.</h2></div></div><p>Lab Next Door is a practical maker space on the internet: Smart Home, IoT, Homelab and 3D Printing, shared honestly as they are built, broken, fixed and improved.</p><div class="pillars"><span>Smart Home</span><span>IoT</span><span>Homelab</span><span>3D Printing</span></div></section>
+    <section class="section section-wrap about" id="about"><div class="section-head"><span>05</span><div><p class="eyebrow">ABOUT LND</p><h2>A lab next door to ordinary life.</h2></div></div><p>Lab Next Door is a practical home lab and a public notebook. It is a place to explore useful technology without pretending the first attempt is the final answer.</p></section>
   </main>
-  <footer><span>© Lab Next Door</span><span>Still Figuring It Out.</span><span>v0.1.0</span></footer>
-  <script src="js/circuit-background.js"></script><script src="js/site.js"></script>
+  <footer><span>© Lab Next Door</span><span>Still Figuring It Out.</span><span>v0.2.0</span></footer>
+  <script src="js/circuit-background.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
