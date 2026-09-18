@@ -1,7 +1,7 @@
 # Lab Next Door Website — Version History
 
-## v0.2.1 — Approved artwork presentation & circuit animation — 2026-09-18
-- Preserved the existing approved LND artwork.
+## v0.2.1 — Approved Logo Presentation & Living Circuit Background — 2026-09-18
+- Preserved the approved LND artwork.
 - Removed the circular hero presentation treatment and restored the artwork as supplied.
 - Improved hero artwork spacing to keep the approved logo clear and unclipped across desktop and mobile.
 - Expanded the circuit field with a denser, structured grid of dim blue PCB-like traces and node points.
